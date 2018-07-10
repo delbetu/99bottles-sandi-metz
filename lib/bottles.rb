@@ -27,7 +27,7 @@ class Bottles
     verses(99, 0)
   end
 
-  def container(n=:FIXME)
+  def container(n)
     if n == 1
       "bottle"
     else
