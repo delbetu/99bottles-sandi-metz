@@ -24,8 +24,21 @@ class Bottles
     end
   end
 
-  def verses(_, _)
-    verse(99) + "\n" + verse(98)
+  def verses(starting, ending)
+    more_abstract_solution(starting, ending)
+    # conditional_solution(starting, ending)
+  end
+
+  def more_abstract_solution(starting, ending)
+    starting.downto(ending).map(&method(:verse)).join("\n")
+  end
+
+  def conditional_solution(starting, ending)
+    if starting == 99
+      verse(starting) + "\n" + verse(ending)
+    else
+      verse(starting + "\n" + verse(1) + "\n" + verse(ending)
+    end
   end
 
   def song
