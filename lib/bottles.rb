@@ -24,15 +24,8 @@ class Bottles
     end
   end
 
-  def verses(a, b)
-    "99 bottles of beer on the wall," +
-    "99 bottles of beer,\n" +
-    "Take one down and pass it around," +
-    "98 bottle of beer on the wall.\n" +
-    "98 bottles of beer on the wall," +
-    "98 bottles of beer,\n" +
-    "Take one down and pass it around," +
-    "97 bottle of beer on the wall.\n"
+  def verses(_, _)
+    verse(99) + "\n" + verse(98)
   end
 
   def song
