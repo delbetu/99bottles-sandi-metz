@@ -32,7 +32,7 @@ class Bottles
     verses(99, 0)
   end
 
-  def container
+  def container(n=:FIXME)
     "bottles"
   end
 end
