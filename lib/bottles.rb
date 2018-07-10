@@ -20,7 +20,7 @@ class Bottles
       "#{n} bottles of beer on the wall," +
       "#{n} bottles of beer,\n" +
       "Take one down and pass it around," +
-      "#{n-1} #{container} of beer on the wall.\n"
+      "#{n-1} #{container(n-1)} of beer on the wall.\n"
     end
   end
 
