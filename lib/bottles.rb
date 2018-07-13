@@ -15,7 +15,7 @@ class Bottles
       "#{n} #{container(n)} of beer on the wall," +
       "#{n} #{container(n)} of beer,\n" +
       "Take #{pronoun(n)} down and pass it around," +
-      "#{n-1} #{container(n-1)} of beer on the wall.\n"
+      "#{quantity(n-1)} #{container(n-1)} of beer on the wall.\n"
     end
   end
 
