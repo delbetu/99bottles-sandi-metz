@@ -7,13 +7,13 @@ class Bottles
       "Go to the store and buy some more," +
       "99 bottles of beer on the wall.\n"
     when 1
-      "#{n} bottle of beer on the wall," +
-      "#{n} bottle of beer,\n" +
+      "#{n} #{container(n)} of beer on the wall," +
+      "#{n} #{container(n)} of beer,\n" +
       "Take it down and pass it around," +
       "no more bottles of beer on the wall.\n"
     else
-      "#{n} bottles of beer on the wall," +
-      "#{n} bottles of beer,\n" +
+      "#{n} #{container(n)} of beer on the wall," +
+      "#{n} #{container(n)} of beer,\n" +
       "Take one down and pass it around," +
       "#{n-1} #{container(n-1)} of beer on the wall.\n"
     end
