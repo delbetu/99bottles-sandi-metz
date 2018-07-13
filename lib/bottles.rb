@@ -9,7 +9,7 @@ class Bottles
     when 1
       "#{n} #{container(n)} of beer on the wall," +
       "#{n} #{container(n)} of beer,\n" +
-      "Take it down and pass it around," +
+      "Take #{pronoun(n)} down and pass it around," +
       "no more bottles of beer on the wall.\n"
     else
       "#{n} #{container(n)} of beer on the wall," +
