@@ -44,6 +44,10 @@ class Bottles
   end
 
   def quantity(n=0)
-    "no more"
+    if n == 0
+      "no more"
+    else
+      n
+    end
   end
 end
