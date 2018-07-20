@@ -4,12 +4,12 @@ class Bottles
     when 0
       "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
       "#{quantity(n)} #{container(n)} of beer.\n" +
-      "Go to the store and buy some more," +
+      action(n) +
       "99 bottles of beer on the wall.\n"
     else
       "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
       "#{quantity(n)} #{container(n)} of beer,\n" +
-      "Take #{pronoun(n)} down and pass it around," +
+      action(n) +
       "#{quantity(n-1)} #{container(n-1)} of beer on the wall.\n"
     end
   end
@@ -43,6 +43,14 @@ class Bottles
       "no more"
     else
       n.to_s
+    end
+  end
+
+  def action(n)
+    if n == 0
+      "Go to the store and buy some more,"
+    else
+      "Take #{pronoun(n)} down and pass it around,"
     end
   end
 end
