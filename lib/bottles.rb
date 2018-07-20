@@ -5,7 +5,7 @@ class Bottles
       "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
       "#{quantity(n)} #{container(n)} of beer.\n" +
       action(n) +
-      "99 bottles of beer on the wall.\n"
+      "#{quantity(n-1)} bottles of beer on the wall.\n"
     else
       "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
       "#{quantity(n)} #{container(n)} of beer,\n" +
@@ -39,7 +39,10 @@ class Bottles
   end
 
   def quantity(n=0)
-    if n == 0
+    case n
+    when -1
+      "99"
+    when 0
       "no more"
     else
       n.to_s
