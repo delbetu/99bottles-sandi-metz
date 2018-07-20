@@ -3,12 +3,12 @@ class Bottles
     case n
     when 0
       "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
-      "no more bottles of beer.\n" +
+      "#{quantity(n)} #{container(n)} of beer.\n" +
       "Go to the store and buy some more," +
       "99 bottles of beer on the wall.\n"
     else
       "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
-      "#{n} #{container(n)} of beer,\n" +
+      "#{quantity(n)} #{container(n)} of beer,\n" +
       "Take #{pronoun(n)} down and pass it around," +
       "#{quantity(n-1)} #{container(n-1)} of beer on the wall.\n"
     end
