@@ -42,7 +42,7 @@ class Bottles
     if n == 0
       "no more"
     else
-      n
+      n.to_s
     end
   end
 end
