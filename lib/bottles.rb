@@ -5,7 +5,7 @@ class Bottles
       "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
       "#{quantity(n)} #{container(n)} of beer.\n" +
       action(n) +
-      "99 bottles of beer on the wall.\n"
+      "#{quantity(99)} bottles of beer on the wall.\n"
     else
       "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
       "#{quantity(n)} #{container(n)} of beer,\n" +
