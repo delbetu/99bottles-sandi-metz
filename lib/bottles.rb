@@ -10,7 +10,7 @@ class Bottles
       "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
       "#{quantity(n)} #{container(n)} of beer,\n" +
       action(n) +
-      "#{quantity(n-1)} #{container(n-1)} of beer on the wall.\n"
+      "#{quantity(successor(n))} #{container(n-1)} of beer on the wall.\n"
     end
   end
 
@@ -52,5 +52,9 @@ class Bottles
     else
       "Take #{pronoun(n)} down and pass it around,"
     end
+  end
+
+  def successor(n)
+    n-1
   end
 end
