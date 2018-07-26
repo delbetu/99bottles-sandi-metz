@@ -5,12 +5,12 @@ class Bottles
       "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
       "#{quantity(n)} #{container(n)} of beer.\n" +
       action(n) +
-      "#{quantity(successor(n))} #{container(n-1)} of beer on the wall.\n"
+      "#{quantity(successor(n))} #{container(successor(n))} of beer on the wall.\n"
     else
       "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
       "#{quantity(n)} #{container(n)} of beer,\n" +
       action(n) +
-      "#{quantity(successor(n))} #{container(n-1)} of beer on the wall.\n"
+      "#{quantity(successor(n))} #{container(successor(n))} of beer on the wall.\n"
     end
   end
 
