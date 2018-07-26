@@ -1,21 +1,9 @@
 class Bottles
   def verse(n)
-    case n
-    when 0
-      "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
-      "#{quantity(n)} #{container(n)} of beer.\n" +
-      action(n) +
-      "#{quantity(successor(n))} #{container(successor(n))} of beer on the wall.\n"
-    else
-      "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
-      "#{quantity(n)} #{container(n)} of beer,\n" +
-      action(n) +
-      "#{quantity(successor(n))} #{container(successor(n))} of beer on the wall.\n"
-    end
-      "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
-      "#{quantity(n)} #{container(n)} of beer.\n" +
-      action(n) +
-      "#{quantity(successor(n))} #{container(successor(n))} of beer on the wall.\n"
+    "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
+    "#{quantity(n)} #{container(n)} of beer.\n" +
+    action(n) +
+    "#{quantity(successor(n))} #{container(successor(n))} of beer on the wall.\n"
   end
 
   def verses(starting, ending)
