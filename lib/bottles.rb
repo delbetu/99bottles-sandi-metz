@@ -1,17 +1,17 @@
 class Bottles
-  def verse(n)
-    "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
-    "#{quantity(n)} #{container(n)} of beer.\n" +
-    action(n) +
-    "#{quantity(successor(n))} #{container(successor(n))} of beer on the wall.\n"
+  def song
+    verses(99, 0)
   end
 
   def verses(starting, ending)
     starting.downto(ending).map(&method(:verse)).join("\n")
   end
 
-  def song
-    verses(99, 0)
+  def verse(n)
+    "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
+    "#{quantity(n)} #{container(n)} of beer.\n" +
+    action(n) +
+    "#{quantity(successor(n))} #{container(successor(n))} of beer on the wall.\n"
   end
 
   def container(n)
