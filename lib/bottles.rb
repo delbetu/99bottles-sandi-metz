@@ -12,6 +12,10 @@ class Bottles
       action(n) +
       "#{quantity(successor(n))} #{container(successor(n))} of beer on the wall.\n"
     end
+      "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
+      "#{quantity(n)} #{container(n)} of beer.\n" +
+      action(n) +
+      "#{quantity(successor(n))} #{container(successor(n))} of beer on the wall.\n"
   end
 
   def verses(starting, ending)

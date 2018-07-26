@@ -5,7 +5,7 @@ require_relative '../lib/bottles'
 class BottlesTest < Minitest::Test
   def test_first_verse
     expected = "99 bottles of beer on the wall," +
-      "99 bottles of beer,\n" +
+      "99 bottles of beer.\n" +
       "Take one down and pass it around," +
       "98 bottles of beer on the wall.\n"
     assert_equal expected, Bottles.new.verse(99)
@@ -13,7 +13,7 @@ class BottlesTest < Minitest::Test
 
   def test_another_verse
     expected = "3 bottles of beer on the wall," +
-      "3 bottles of beer,\n" +
+      "3 bottles of beer.\n" +
       "Take one down and pass it around," +
       "2 bottles of beer on the wall.\n"
     assert_equal expected, Bottles.new.verse(3)
@@ -21,7 +21,7 @@ class BottlesTest < Minitest::Test
 
   def test_verse_2
     expected = "2 bottles of beer on the wall," +
-      "2 bottles of beer,\n" +
+      "2 bottles of beer.\n" +
       "Take one down and pass it around," +
       "1 bottle of beer on the wall.\n"
     assert_equal expected, Bottles.new.verse(2)
@@ -29,7 +29,7 @@ class BottlesTest < Minitest::Test
 
   def test_verse_1
     expected = "1 bottle of beer on the wall," +
-      "1 bottle of beer,\n" +
+      "1 bottle of beer.\n" +
       "Take it down and pass it around," +
       "no more bottles of beer on the wall.\n"
     assert_equal expected, Bottles.new.verse(1)
@@ -45,12 +45,12 @@ class BottlesTest < Minitest::Test
 
   def test_verses_99_98
     expected = "99 bottles of beer on the wall," +
-      "99 bottles of beer,\n" +
+      "99 bottles of beer.\n" +
       "Take one down and pass it around," +
       "98 bottles of beer on the wall.\n" +
       "\n" +
       "98 bottles of beer on the wall," +
-      "98 bottles of beer,\n" +
+      "98 bottles of beer.\n" +
       "Take one down and pass it around," +
       "97 bottles of beer on the wall.\n"
     assert_equal expected, Bottles.new.verses(99, 98)
@@ -58,12 +58,12 @@ class BottlesTest < Minitest::Test
 
   def test_verses_2_0
     expected = "2 bottles of beer on the wall," +
-      "2 bottles of beer,\n" +
+      "2 bottles of beer.\n" +
       "Take one down and pass it around," +
       "1 bottle of beer on the wall.\n" +
       "\n" +
       "1 bottle of beer on the wall," +
-      "1 bottle of beer,\n" +
+      "1 bottle of beer.\n" +
       "Take it down and pass it around," +
       "no more bottles of beer on the wall.\n" +
       "\n" +
