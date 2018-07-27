@@ -15,12 +15,12 @@ class Bottles
   end
 
   def container(n)
-    BottleNumber.new(n).container(n)
     if n == 1
       "bottle"
     else
       "bottles"
     end
+    BottleNumber.new(n).container(n)
   end
 
   def pronoun(n)
