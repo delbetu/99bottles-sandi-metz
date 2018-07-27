@@ -15,7 +15,7 @@ class Bottles
   end
 
   def container(n)
-    BottleNumber.new(n).container(n)
+    BottleNumber.new(n).container
   end
 
   def pronoun(n)
