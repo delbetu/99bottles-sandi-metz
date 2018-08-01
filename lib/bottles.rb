@@ -63,4 +63,8 @@ class BottleNumber
       number-1
     end
   end
+
+  def to_s
+    "#{quantity} #{container}"
+  end
 end
