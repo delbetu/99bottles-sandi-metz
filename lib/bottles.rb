@@ -8,9 +8,11 @@ class Bottles
   end
 
   def verse(n)
+    bottle_number = BottleNumber.new(n)
+
     "#{quantity(n).capitalize} #{container(n)} of beer on the wall," +
     "#{quantity(n)} #{container(n)} of beer.\n" +
-    action(n) +
+    bottle_number.action +
     "#{quantity(successor(n))} #{container(successor(n))} of beer on the wall.\n"
   end
 
@@ -24,10 +26,6 @@ class Bottles
 
   def quantity(n=0)
     BottleNumber.new(n).quantity
-  end
-
-  def action(n)
-    BottleNumber.new(n).action
   end
 
   def successor(n)
