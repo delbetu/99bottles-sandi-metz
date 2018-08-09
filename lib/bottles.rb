@@ -85,7 +85,7 @@ class BottleNumber0 < BottleNumber
 
   def successor
     # should invoke factory
-    99
+    BottleNumber.for(99)
   end
 end
 
