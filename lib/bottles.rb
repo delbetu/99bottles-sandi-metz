@@ -66,8 +66,7 @@ class BottleNumber
   end
 
   def successor
-    # should invoke factory
-    number-1
+    BottleNumber.for(number-1)
   end
 
   def to_s
