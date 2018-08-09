@@ -32,6 +32,17 @@ class Bottles
 end
 
 class BottleNumber
+  def self.for(number)
+    case number
+    when 0
+      BottleNumber0
+    when 1
+      BottleNumber1
+    else
+      BottleNumber
+    end.new(number)
+  end
+
   attr_reader :number
   def initialize(number)
     @number = number
@@ -54,6 +65,7 @@ class BottleNumber
   end
 
   def successor
+    # should invoke factory
     number-1
   end
 
@@ -72,6 +84,7 @@ class BottleNumber0 < BottleNumber
   end
 
   def successor
+    # should invoke factory
     99
   end
 end
