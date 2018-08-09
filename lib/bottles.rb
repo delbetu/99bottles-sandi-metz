@@ -15,16 +15,6 @@ class Bottles
     bottle_number.action +
     "#{bottle_number.successor} of beer on the wall.\n"
   end
-
-  def bottle_number_for(number)
-    if number == 0
-      BottleNumber0
-    elsif number == 1
-      BottleNumber1
-    else
-      BottleNumber
-    end.new(number)
-  end
 end
 
 class BottleNumber
