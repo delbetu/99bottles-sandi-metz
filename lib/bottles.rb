@@ -9,10 +9,7 @@ class Bottles
 
   def verse(n)
     bottle_number = BottleNumber.for(n)
-    # whishful code
-    # next_bottle_number = bottle_number.successor
-    succ = bottle_number.successor
-    next_bottle_number = BottleNumber.for(succ)
+    next_bottle_number = bottle_number.successor
 
     "#{bottle_number}".capitalize + " of beer on the wall," +
     "#{bottle_number} of beer.\n" +
