@@ -9,6 +9,8 @@ class Bottles
 
   def verse(n)
     bottle_number = bottle_number_for(n)
+    # whishful code
+    # next_bottle_number = bottle_number.successor
     succ = bottle_number.successor
     next_bottle_number = bottle_number_for(succ)
 
